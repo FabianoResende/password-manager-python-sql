@@ -24,3 +24,12 @@ password-manager-python-sql/
 ├── passwords.db     # Banco de dados SQLite
 ├── requirements.txt # Dependências do projeto
 └── README.md        # Documentação
+
+
+```
+
+## 👨‍💻 Autor  
+**Fabiano Faria de Resende**  
+Estagiário de Engenharia de IA Front‑end — FlyRank (Jul/2026)  
+GitHub: https://github.com/FabianoResende  
+LinkedIn: https://www.linkedin.com/in/fabianofr/
