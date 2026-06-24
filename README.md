@@ -1,104 +1,26 @@
-# 🔐 Gerenciador de Senhas em Python + SQLite
+# 🗝️ Gerenciador de Senhas em Python + SQLite
 
-Um projeto didático desenvolvido para praticar **Python**, **SQL (SQLite)** e **versionamento com Git/GitHub**.  
-O aplicativo funciona via terminal e permite gerar, salvar, listar, consultar e apagar senhas de forma simples e organizada.
-
----
-
-## 🚀 Funcionalidades
-
-- ✔️ Gera senhas aleatórias com diferentes tamanhos  
-- ✔️ Salva as senhas em um banco SQLite (`passwords.db`)  
-- ✔️ Lista todas as senhas cadastradas  
-- ✔️ Mostra detalhes de uma senha específica  
-- ✔️ Apaga senhas pelo ID  
-- ✔️ Código organizado em módulos (`generator.py`, `database.py`, `app.py`)
+Um gerenciador de senhas desenvolvido em **Python** com persistência em **SQLite**, focado em organização, segurança e praticidade para armazenar credenciais de forma estruturada.
 
 ---
 
-## 🗂 Estrutura do Projeto
+## ⚙️ Funcionalidades
 
-```
-password-manager-sql/
-│
-├── app.py           # Menu principal e fluxo do programa
-├── generator.py     # Gerador de senhas
-├── database.py      # Conexão e operações no SQLite
-├── passwords.db     # Banco de dados (opcional no Git)
-└── README.md        # Documentação do projeto
-```
+- **Cadastrar senhas** com serviço, usuário e senha.
+- **Listar senhas** armazenadas no banco.
+- **Atualizar** registros existentes.
+- **Excluir** credenciais que não são mais necessárias.
+- Persistência em **SQLite** (`passwords.db`).
+- Estrutura modular em arquivos Python.
 
 ---
 
-## 🛠 Tecnologias e Ambiente
-
-- **Linguagem:** Python 3.10
-- **Banco de Dados:** SQLite3
-- **IDE:** PyCharm 2024
-- **Versionamento:** Git & GitHub
-
----
-
-## ▶️ Como Executar
-
-1. Clone o repositório:
+## 📁 Estrutura do Projeto
 
 ```bash
-git clone https://github.com/FabianoResende/gerenciador-de-senhas-sql.git
-```
-
-2. Entre na pasta:
-
-```bash
-cd gerenciador-de-senhas-sql
-```
-
-3. Execute o programa:
-
-```bash
-python app.py
-```
-
----
-
-## 📸 Exemplo de Uso
-
-```
-=== GERENCIADOR DE SENHAS ===
-1 - Gerar e salvar nova senha
-2 - Listar senhas salvas
-3 - Ver senha específica
-4 - Apagar senha
-0 - Sair
-Escolha uma opção: 1
-Serviço (ex: Gmail): fabianofresende
-Usuário (opcional): Fabiano
-Tamanho da senha (padrão 12): 8
-
-Senha gerada: A9#kP2!x
-Salvar no banco? (s/n): s
-Senha salva com sucesso!
-```
-
----
-
-## 📌 Melhorias Futuras
-
-- 🔒 Criptografar as senhas antes de salvar  
-- 🖥 Criar uma interface gráfica (Tkinter ou PyQt)  
-- 🌐 Criar uma API para acessar as senhas  
-- 📱 Criar uma versão mobile  
-
----
-
-## 👨‍💻 Autor
-
-**Fabiano Resende**  
-Estudante de Sistemas de Informação | Python, Java e SQL  
-Repositório: `https://github.com/FabianoResende` [(github.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fgithub.com%2FFabianoResende")
-
-```
-
----
-
-
+password-manager-python-sql/
+├── main.py          # Ponto de entrada da aplicação
+├── password.py      # Lógica de gerenciamento de senhas
+├── passwords.db     # Banco de dados SQLite
+├── requirements.txt # Dependências do projeto
+└── README.md        # Documentação
