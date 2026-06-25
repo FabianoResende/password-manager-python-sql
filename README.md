@@ -1,32 +1,26 @@
-# 🔐 Password Manager — Python + SQLite
+# 🗝️ Gerenciador de Senhas em Python + SQLite
 
-Gerenciador de senhas desenvolvido em **Python**, com persistência de dados usando **SQLite**.  
-O projeto permite criar, visualizar, atualizar e excluir credenciais de forma simples e organizada.
-
----
-
-## 🚀 Funcionalidades
-
-- Criar novas credenciais  
-- Listar todas as credenciais salvas  
-- Atualizar registros existentes  
-- Excluir credenciais  
-- Persistência local com SQLite  
-- Estrutura organizada em funções  
+Um gerenciador de senhas desenvolvido em **Python** com persistência em **SQLite**, focado em organização, segurança e praticidade para armazenar credenciais de forma estruturada.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## ⚙️ Funcionalidades
 
-- Python  
-- SQLite  
-- SQL  
-- Git & GitHub  
+- **Cadastrar senhas** com serviço, usuário e senha.
+- **Listar senhas** armazenadas no banco.
+- **Atualizar** registros existentes.
+- **Excluir** credenciais que não são mais necessárias.
+- Persistência em **SQLite** (`passwords.db`).
+- Estrutura modular em arquivos Python.
 
 ---
 
-## 📦 Como Executar
+## 📁 Estrutura do Projeto
 
-1. Clone o repositório:
 ```bash
-git clone https://github.com/FabianoResende/password-manager-python-sql
+password-manager-python-sql/
+├── main.py          # Ponto de entrada da aplicação
+├── password.py      # Lógica de gerenciamento de senhas
+├── passwords.db     # Banco de dados SQLite
+├── requirements.txt # Dependências do projeto
+└── README.md        # Documentação
